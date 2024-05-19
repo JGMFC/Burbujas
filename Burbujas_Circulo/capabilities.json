@@ -1,0 +1,70 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Eje X",
+            "name": "ejeX",
+            "kind": "GroupingOrMeasure"
+        },
+        {
+            "displayName": "Eje Y",
+            "name": "ejeY",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "circle": {
+            "displayName": "Circle",
+            "properties": {
+                "circleColor": {
+                    "displayName": "Color",
+                    "description": "The fill color of the circle.",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "circleThickness": {
+                    "displayName": "Thickness",
+                    "description": "The circle thickness.",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "ejeX": {
+                        "max": 2
+                    },
+                    "ejeY": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "ejeX"
+                    }
+                },
+                "values": {
+                    "select": [
+                        {
+                            "bind": {
+                                "to": "ejeY"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "privileges": []
+}

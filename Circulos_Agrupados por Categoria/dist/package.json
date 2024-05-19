@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.01",
+		"author": {"name":"Javier","email":"javier.garcia@tresmarescapital.com"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/Budget_Forecast_Actual.pbiviz.json"
+			}
+		],
+		"visual": {"name":"reactCircleCard","displayName":"Budget_Forecast_Actual","guid":"Budget_Forecast_Actual","visualClassName":"Visual","version":"1.0.0.01","description":"gris y Rojo","supportUrl":"https://www.tresmarescapital.com/","gitHubUrl":""},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}
